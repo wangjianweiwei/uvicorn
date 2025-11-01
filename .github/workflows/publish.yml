@@ -22,13 +22,13 @@ jobs:
         run: scripts/build
 
       - name: Upload package distributions
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: package-distributions
           path: dist/
 
       - name: Upload documentation
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: documentation
           path: site/
